@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "title": "Велопрогулка",
+    "image": "cycles",
+    "timestamp": 1582562408298
+  },
+  {
+    "id": 2,
+    "title": "Hi-Tech выставка",
+    "image": "expo",
+    "timestamp": 1583020800238
+  },
+  {
+    "id": 3,
+    "title": "Велопрогулка",
+    "image": "cycles",
+    "timestamp": 1583280000882
+  },
+  {
+    "id": 4,
+    "title": "Hi-Tech выставка",
+    "image": "expo",
+    "timestamp": 1593280000882
+  },
+  {
+    "id": 5,
+    "title": "Велопрогулка",
+    "image": "cycles",
+    "timestamp": 1595280000882
+  }
+]

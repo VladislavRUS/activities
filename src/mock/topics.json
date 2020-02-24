@@ -1,17 +1,17 @@
 [
   {
     "id": 1,
-    "title": "Test 1",
-    "description": "Test 1 description"
+    "title": "Событие 1",
+    "description": "Описание события 1"
   },
   {
     "id": 2,
-    "title": "Test 2",
-    "description": "Test 2 description"
+    "title": "Событие 2",
+    "description": "Описание события 2"
   },
   {
     "id": 3,
-    "title": "Test 3",
-    "description": "Test 3 description"
+    "title": "Событие 3",
+    "description": "Описание события 3"
   }
 ]

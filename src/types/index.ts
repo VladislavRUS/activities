@@ -3,3 +3,10 @@ export interface ITopic {
   title: string;
   description: string;
 }
+
+export interface IPost {
+  id: number;
+  title: string;
+  image: string;
+  timestamp: number;
+}

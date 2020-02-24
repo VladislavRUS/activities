@@ -6,7 +6,6 @@ import { wait } from '../utils/wait';
 
 class TopicsStore {
   rootStore: RootStore;
-
   @observable topics: ITopic[] = [];
   @observable isFetchingTopics = false;
   @observable selectedTopic: ITopic | null = null;
@@ -18,7 +17,7 @@ class TopicsStore {
   async fetchTopics() {
     this.setIsFetchingTopics(true);
 
-    await wait(250);
+    await wait(500);
 
     this.setTopics(topics);
     this.setIsFetchingTopics(false);
@@ -36,7 +35,12 @@ class TopicsStore {
 
   @action.bound
   onTopicSelect(topic: ITopic) {
-    this.selectedTopic = topic;
+    if (this.selectedTopic === topic) {
+      this.selectedTopic = null;
+    } else {
+      this.selectedTopic = topic;
+      this.rootStore.feedStore.clearPosts();
+    }
   }
 }
 

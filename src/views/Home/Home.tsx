@@ -1,5 +1,5 @@
 import React from 'react';
-import { Wrapper, NextButtonWrapper } from './Home.styles';
+import { Wrapper, NextButtonWrapper, Description } from './Home.styles';
 import { RegularButton } from '../../components/RegularButton';
 import { Loader } from '../../components/Loader';
 import { rootStore } from '../../store';
@@ -33,6 +33,10 @@ class Home extends React.Component<Props> {
             isActive={rootStore.topicsStore.selectedTopic === topic}
           />
         ))}
+
+        {rootStore.topicsStore.selectedTopic && (
+          <Description>{rootStore.topicsStore.selectedTopic.description}</Description>
+        )}
 
         <NextButtonWrapper>
           <RegularButton text={'Далее'} onPress={this.onNext} isDisabled={!rootStore.topicsStore.selectedTopic} />

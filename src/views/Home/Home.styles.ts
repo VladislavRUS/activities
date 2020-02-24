@@ -12,3 +12,10 @@ export const NextButtonWrapper = styled.View`
   width: 100%;
   max-width: 74px;
 `;
+
+export const Description = styled.Text`
+  margin-top: 80px;
+  color: #9e9e9e;
+  font-size: 16px;
+  width: 100%;
+`;
