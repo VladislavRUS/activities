@@ -3,13 +3,13 @@ import { Wrapper, NextButtonWrapper } from './Home.styles';
 import { RegularButton } from '../../components/RegularButton';
 import { Loader } from '../../components/Loader';
 import { rootStore } from '../../store';
-import Topic from './Topic/Topic';
+import { Topic } from './Topic';
 import { observer } from 'mobx-react';
 import { StackNavigationProp } from '@react-navigation/stack';
 import { Routes } from '../../constants/Routes';
 
 type Props = {
-  navigation: StackNavigationProp<{}>;
+  navigation: StackNavigationProp<any>;
 };
 
 @observer
